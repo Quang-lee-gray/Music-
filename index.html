@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music player</title>
+</head>
+<body>
+    <div class="player">
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header>
+            <h4>Bài hát : </h4>
+            <h2></h2>
+        </header>
+
+        <!-- CD -->
+        <div class="cd">
+            <div class="cd-thumb">
+
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="control">
+            <div class="btn btn-repeat" title="repeat music">
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="btn btn-prev" title="previous music">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+                <i class="fa-solid fa-pause icon-pause" title="pause music"></i>
+                <i class="fa-solid fa-play icon-play" title="play music"></i>
+            </div>
+            <div class="btn btn-next" title="next music">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            <div class="btn btn-random" title="Random music">
+                <i class="fa-solid fa-shuffle"></i>
+            </div>
+        </div>
+
+        <input id="progress" class="progress" type="range" value="0" step="0.1" min="1" max="100">
+        <audio id="audio" src=""></audio>
+
+    </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+           
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
